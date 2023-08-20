@@ -9,7 +9,7 @@ const route = require('./routes/route');
 
 //connect to mongodb
 
-mongoose.connect('mongodb://localhost:27017/contactlist');
+mongoose.connect('mongodb://192.168.56.101:27017/contactlist');
 mongoose.connection.on('connected',function(){
     console.log('Connected to mongodb @ 27017');
 });
@@ -35,9 +35,9 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use('/api',route);
 //testing server
 
-app.get('/',function(req,res){
+/*app.get('/',function(req,res){
     res.send('foobar');
-});
+});*/
 
 app.listen(port,function(){
     console.log('server started at port: '+port);

@@ -1,0 +1,27 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Mobile No</th>
+      <th scope="col">actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students$ | async; index as i">
+      <th scope="row">{{ i }}</th>
+      <th>{{ i }}</th>
+      <td>{{ student.name }}</td>
+      <td>{{ student.mobile }}</td>
+      <td>
+        <button onClick="edit(student.id)" style="display: inline-flex">
+          Edit
+        </button>
+        <button onClick="delete(student.id)" style="display: inline-flex">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

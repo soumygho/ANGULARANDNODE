@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Soumya",
+      "mobile": "9614843037"
+    },
+    {
+      "id": 2,
+      "name": "Soumya",
+      "mobile": "9614843037"
+    },
+    {
+      "id": 3,
+      "name": "Soumya",
+      "mobile": "9614843037"
+    }
+  ]
+}
